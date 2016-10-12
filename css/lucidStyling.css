@@ -1,0 +1,30 @@
+h1{
+    text-align: center;
+}
+p{
+    
+}
+div{
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+#nav_01 .container{
+    padding: 10px;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+#foot_01{
+    text-align: center;
+}
+.wrapper{
+    min-height: 100%;
+    margin: 0 auto -100px;
+}
+.glowlime-image{
+    height: 40px;
+}
