@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+p{
+    
+}
+div{
+}
+ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+}
+li{
+    margin-top: 10px;
+    display: inline-block;
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+}
+li a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/P01_option_trans.gif");
+    color: black;
+    padding-top: 30px;
+    padding-right: 10px;
+}
+li a:active{
+    text-decoration: none;
+    color: black;
+    background-image: url("../img/P01_option-selected_trans.gif");
+}
+li:link {
+    text-align: center;
+    width: 50px;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin: 0px;
+}
+body.background {
+    background-color: azure
+}
+#menu {
+    /*position: relative;*/
+    width: 100%;
+    padding: 0;
+}
+#nav_text{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+}
+.container{
+    padding-left: 10px;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+/*#nav_bar_01{
+    width: 100%;
+    height: 100%;
+}
+#nav_bar_01 a{
+    content: url("../img/P01_option_trans.gif");
+}
+#nav_bar_01 a:active{
+    content: url("../img/P01_option-selected_trans.gif");
+    background-position:left top; background-repeat:no-repeat; display:block;
+}*/
+#foot_01{
+    text-align: center;
+}
+.wrapper{
+    min-height: 100%;
+    margin: 0px;
+}
+.glowlime-image{
+    height: 40px;
+    margin: 10px;
+}
