@@ -94,3 +94,59 @@ body.background {
     height: 40px;
     margin: 10px;
 }
+table ul li{
+    margin: 0px;
+}
+#teamList ul li a{
+    background-image: none;
+    height: 25px;
+    width:150px;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+#teamList ul li p{
+    height: 25px;
+    width:150px;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+#teamList td{
+    padding: 0px;
+    margin: 0px;
+}
+#teamList h2{
+    padding: 0px;
+    margin: 0px;
+    margin-top: -10px;
+}
+#teamList p{
+    padding: 0px;
+    margin: 0px;
+    word-break: normal;
+}
+#teamList a{
+    padding: 0px;
+    margin: 0px;
+}
+#teamlist img{
+    width: 200px;
+    height: 200px;
+}
+table{
+    margin-left:300px;
+    border-collapse: collapse;
+}
+td{
+    min-height: 200px;
+    min-width: 200px;
+    border: 1px solid black;
+}
+tr{
+    height: 200px;
+}
+div p{
+    margin-left: 100px;
+    margin-right: 100px;
+}
