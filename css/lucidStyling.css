@@ -51,6 +51,7 @@ html{
 body{
     height: 100%;
     margin: 0px;
+    overflow: hidden;
 }
 body.background {
     background-color: azure;
@@ -113,8 +114,11 @@ table ul li{
 .teamContainer{
     height: 600px;
     overflow-y: scroll;
-    margin-left: 400px;
+    margin-left: 350px;
     width: 450px;
+}
+.teamContainer h1{
+    margin-left:-50px;
 }
 #teamList ul li a{
     background-image: none;
@@ -233,18 +237,47 @@ div p{
     height:100%;
 }
 .modal{
-    display: none; /* Hidden by default */
+    display: none;/*none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    /*height: 100%; /* Full height */
+    margin-top: 120px;
+    margin-left: 60px;
+    height: 80%;
     overflow: auto; /* Enable scroll if needed */
 }
-#teamModal{
-    display: block;
-    color: purple;
-}
 .modalContent{
+    display: block;
+    /*margin-top: 120px;
+    margin-left: 60px;
+    margin-right: 60px;
+    height: 80%;*/
+    height: 100%;
+    margin-right: 120px;
+    background-color: lightblue;
+    opacity: .98;
+    border-radius: 10px;
+}
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Arial;
+    padding-right: 3px;
+}
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+#aboutModal .modalContent{
+    height: 20%;
+}
+#contactModal .modalContent{
+    height: 10%;
 }
