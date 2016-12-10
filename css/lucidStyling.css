@@ -6,9 +6,12 @@
 h1{
     text-align: center;
 }
+
 p{
-    
+     font-size: 1.25em;
+     font-family: avenir
 }
+
 div{
 }
 ul {
@@ -68,12 +71,26 @@ body.background {
 #index{
     color: white;
 }
-#menu {
-    /*position: relative;*/
-    width: 100%;
-    padding: 0;
-    margin-top:-325px;
+
+.navButton {
+     text-align: center;
+     width: 20em;
+     animation: blinker 2s ease-in-out infinite;
 }
+
+#menu {
+     position: absolute;
+     left: 37.5%;
+     right: 37.5%;
+    bottom: 20em;
+    padding: 0;
+    width: 100em;
+}
+
+#menu img {
+     width: 100%;
+}
+
 #nav_text{
     position: absolute;
     width: 100%;
@@ -86,17 +103,7 @@ body.background {
     height: 60px;
     background-color: black;
 }
-/*#nav_bar_01{
-    width: 100%;
-    height: 100%;
-}
-#nav_bar_01 a{
-    content: url("../img/P01_option_trans.gif");
-}
-#nav_bar_01 a:active{
-    content: url("../img/P01_option-selected_trans.gif");
-    background-position:left top; background-repeat:no-repeat; display:block;
-}*/
+
 #foot_01{
     text-align: center;
 }
@@ -118,6 +125,26 @@ table ul li{
     margin-left: 100px;
     width: 900px;
 }
+
+/* Source: http://stackoverflow.com/questions/16344354/how-to-make-blinking-flashing-text-with-css3 */
+.blink_me {
+  animation: blinker 2.5s ease-in-out infinite;
+}
+
+@keyframes blinker {
+  50% { opacity: 0.8; }
+}
+
+#abstract {
+     background-image: url("../img/P01_Chat-background.png");
+     margin: auto;
+     color: black;
+     width: 35em;
+     padding: 1.5em;
+     border-radius: 2em;
+     box-shadow: 5px 5px 5px lightyellow;
+}
+
 #teamList ul li a{
     background-image: none;
     height: 25px;
@@ -128,6 +155,8 @@ table ul li{
     color: white;
 }
 #teamList ul li p{
+    font-size: 1em;
+    font-family: serif;
     height: 25px;
     width:150px;
     text-align: left;
@@ -158,8 +187,8 @@ table ul li{
     margin: 0px;
 }
 #teamlist img{
-    width: 200px;
-    height: 200px;
+    /*width: 200px;
+    height: 200px;*/
 }
 table{
     border-collapse: collapse;
@@ -175,63 +204,28 @@ div p{
     margin-left: 100px;
     margin-right: 100px;
 }
-#index #nav_bar_01 {
-    position: relative;
-    margin-left: 31.5%;
-    margin-top: 24.2%;
-    width: 37%;
-    height: 38%;
-}
-#index #menu li{
-    display: block;
-    padding-right: 0px;
-}
+
 #index #menu li a{
     background-image: none;
-    /*background-color: red;
-    opacity: .2;*/
     padding: 0px;
     border-radius: 10px;
-    /*transform:perspective(10px) rotateX(1deg);*/
 }
-#team{
-    padding-top:9%;
-    padding-left: 19.65%;
-    width: 79%;
-    height: 65%;
-    margin-top: 7%;
-    margin-left: .5%;
-}
+
 #team a{
-    width: /*36.1%*/100%;
+    width: 100%;
     height: 100%;
 }
-#art{
-    margin-top:5%;
-    margin-left: 16.8%;
-    width:65.5%;
-    height : 32%;
-}
+
 #art a{
     width:100%;
     height:100%;
 }
-#about{
-    margin-top:5.6%;
-    margin-left: 15%;
-    width:71.5%;
-    height : 37.5%;
-}
+
 #about a{
     width:100%;
     height:100%;
 }
-#contact{
-    margin-top:4.25%;
-    margin-left: 11.4%;
-    width:76.93%;
-    height : 45%;
-}
+
 #contact a{
     width:100%;
     height:100%;
@@ -243,7 +237,6 @@ div p{
     left: 0;
     top: 0;
     width: 100%; /* Full width */
-    /*height: 100%; /* Full height */
     margin-top: 120px;
     margin-left: 60px;
     height: 80%;
@@ -251,10 +244,6 @@ div p{
 }
 .modalContent{
     display: block;
-    /*margin-top: 120px;
-    margin-left: 60px;
-    margin-right: 60px;
-    height: 80%;*/
     height: 100%;
     margin-right: 120px;
     background-color: lightblue;
@@ -275,30 +264,39 @@ div p{
     text-decoration: none;
     cursor: pointer;
 }
+
 #aboutModal .modalContent{
-    height: 20%;
+     font-size: 1.5em;
 }
+
 #contactModal .modalContent{
-    height: 10%;
+     font-size: 3em;
 }
+
+
 #phone{
+    position: absolute;
+    bottom: 0;
+    margin-top: -12.5%;
     x:0;
     y:0;
-    height: 100%;
-    width: 100%;
+    width: 55em;
+    pointer-events:none;
+    left: 25%;
+    right: 25%;
 }
+
 #phoneBackground{
-    display: block;
+    position: absolute;
+    bottom: 0;
     x: 0;
     y: 0;
-    height: 100%;
-    width: 100%;
-    /*margin-top: -299px;*/
-    margin-top: -67%;
+    width: 55em;
+    margin-top: -50%;
+    left: 25%;
+    right: 25%;
 }
-#nav_bar_01 a img{
-    width: 100%;
-}
+
 .artContainer{
     height: 600px;
     overflow-y: scroll;
